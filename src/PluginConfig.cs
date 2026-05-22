@@ -16,8 +16,6 @@ public sealed class PluginConfig
 
     public float ReplacementHintDuration { get; set; } = 4f;
 
-    public ushort ReserveAmmoAmount { get; set; } = 80;
-
     public bool LockGr18InnerDoor { get; set; } = true;
 }
 

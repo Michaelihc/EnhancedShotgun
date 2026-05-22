@@ -14,7 +14,7 @@
 - Current local test port: `7777`.
 - Plugin target: LabAPI `net48` plugin named `EnhancedShotgun`.
 - Current feature: one enhanced shotgun spawns in LCZ GR-18; normal shotgun acquisition is replaced with AKs, while Chaos Marauder spawn shotguns are replaced with A7s.
-- Enhanced shotgun behavior: doubled pickup model scale, provider-backed localized pickup hint, auto-refill shotgun ammo, and 4x firearm damage.
+- Enhanced shotgun behavior: doubled pickup model scale, provider-backed localized pickup hint, direct internal shotgun refill without reserve ammo grants, and 4x firearm damage.
 - GR-18 access: gate requires all three keycard tiers/O5-style access and bypasses SCP-2176; plugin also rejects non-O5 door interactions plus grenade/SCP-018/pry-style door damage.
 
 ## SCP:SL Plugin-Specific Principles

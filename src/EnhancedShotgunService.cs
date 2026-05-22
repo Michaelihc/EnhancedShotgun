@@ -51,7 +51,7 @@ public sealed class EnhancedShotgunService
         }
 
         _tracker.Mark(ev.Item.Serial);
-        Refill(ev.Player, ev.Item as ShotgunFirearm);
+        Refill(ev.Item as ShotgunFirearm);
         _hints.Show(
             ev.Player,
             HintTags.Pickup,
@@ -63,7 +63,7 @@ public sealed class EnhancedShotgunService
     {
         if (_tracker.IsSpecial(ev.NewItem))
         {
-            Refill(ev.Player, ev.NewItem as ShotgunFirearm);
+            Refill(ev.NewItem as ShotgunFirearm);
         }
     }
 
@@ -71,7 +71,7 @@ public sealed class EnhancedShotgunService
     {
         if (_tracker.IsSpecial(ev.FirearmItem))
         {
-            Refill(ev.Player, ev.FirearmItem as ShotgunFirearm);
+            Refill(ev.FirearmItem as ShotgunFirearm);
         }
     }
 
@@ -79,7 +79,7 @@ public sealed class EnhancedShotgunService
     {
         if (_tracker.IsSpecial(ev.FirearmItem))
         {
-            Refill(ev.Player, ev.FirearmItem as ShotgunFirearm);
+            Refill(ev.FirearmItem as ShotgunFirearm);
         }
     }
 
@@ -91,7 +91,7 @@ public sealed class EnhancedShotgunService
         }
 
         ev.IsAllowed = false;
-        Refill(ev.Player, ev.FirearmItem as ShotgunFirearm);
+        Refill(ev.FirearmItem as ShotgunFirearm);
     }
 
     private void OnReloadingWeapon(PlayerReloadingWeaponEventArgs ev)
@@ -102,7 +102,7 @@ public sealed class EnhancedShotgunService
         }
 
         ev.IsAllowed = false;
-        Refill(ev.Player, ev.FirearmItem as ShotgunFirearm);
+        Refill(ev.FirearmItem as ShotgunFirearm);
     }
 
     private void OnHurting(PlayerHurtingEventArgs ev)
@@ -118,7 +118,7 @@ public sealed class EnhancedShotgunService
         firearmDamage.Damage *= _config.DamageMultiplier;
     }
 
-    private void Refill(Player player, ShotgunFirearm? shotgun)
+    private static void Refill(ShotgunFirearm? shotgun)
     {
         if (shotgun == null)
         {
@@ -134,6 +134,5 @@ public sealed class EnhancedShotgunService
         shotgun.StoredAmmo = shotgun.MaxAmmo;
         shotgun.ChamberedAmmo = chamberMax;
         shotgun.CockedChambers = chamberMax;
-        player.SetAmmo(ItemType.Ammo12gauge, _config.ReserveAmmoAmount);
     }
 }

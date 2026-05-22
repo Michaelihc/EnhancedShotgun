@@ -56,7 +56,7 @@ public sealed class Localization
     {
         return key switch
         {
-            MessageKey.PickedUpEnhancedShotgun => "You picked up the super shotgun. Damage is quadrupled.",
+            MessageKey.PickedUpEnhancedShotgun => "You picked up the ultimate shotgun. It deals four times damage.",
             MessageKey.NormalShotgunReplacedWithAk => "Normal shotguns are disabled and were replaced with an AK.",
             MessageKey.NormalShotgunReplacedWithA7 => "The Marauder shotgun is disabled and was replaced with an A7.",
             MessageKey.Gr18NeedsO5 => "The GR-18 gate requires O5-level access.",

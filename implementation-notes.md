@@ -36,6 +36,7 @@
 - After the hint-provider refactor, `rg SendHint src` only reports `VanillaCompatibilityHintProvider`.
 - Deployed to `%APPDATA%\SCP Secret Laboratory\LabAPI\plugins\7777\EnhancedShotgun.dll` and updated `%APPDATA%\SCP Secret Laboratory\LabAPI\configs\7777\EnhancedShotgun\config.yml`.
 - Restarted visible `LocalAdmin.exe 7777` from the dedicated-server directory. Log `LocalAdmin Log 2026-05-22 12.28.48.txt` confirms RueI 3.1.2 enabled first, EnhancedShotgun detected RueI for hints, EnhancedShotgun enabled, and the enhanced shotgun spawned in GR-18.
+- Version `1.0.1` changes English pickup text to a true English localized message and removes player reserve ammo grants. The enhanced shotgun now refills only its internal chamber/tube fields. Log `LocalAdmin Log 2026-05-22 12.49.11.txt` confirms EnhancedShotgun `1.0.1` enabled and spawned the GR-18 shotgun after deployment.
 
 ## Open Manual Checks
 
@@ -44,4 +45,4 @@
 - Confirm non-O5 keycards, SCP-2176/Ghostlight, and SCP pry/damage cannot open or break GR-18.
 - Confirm O5-level keycard can open GR-18.
 - Confirm Chaos Marauder/normal shotgun paths receive AK and see a replacement hint where a player is known.
-- Confirm enhanced shotgun pickup hint appears and firearm damage/ammo behavior match the config.
+- Confirm enhanced shotgun pickup hint appears and firearm damage/internal shotgun ammo behavior match the config.

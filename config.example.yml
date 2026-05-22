@@ -6,5 +6,4 @@ damage_multiplier: 4
 pickup_scale: 2
 pickup_hint_duration: 5
 replacement_hint_duration: 4
-reserve_ammo_amount: 80
 lock_gr18_inner_door: true

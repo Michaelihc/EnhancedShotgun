@@ -21,7 +21,7 @@ public sealed class EnhancedShotgunPlugin : Plugin<PluginConfig>
 
     public override string Author => "Codex";
 
-    public override Version Version => new(1, 0, 0);
+    public override Version Version => new(1, 0, 1);
 
     public override Version RequiredApiVersion => new(LabApiProperties.CompiledVersion);
 
