@@ -1,5 +1,11 @@
 # EnhancedShotgun
 
+<p align="center">
+  <a href="#english"><strong>English</strong></a>
+  <span> | </span>
+  <a href="#chinese"><strong>中文</strong></a>
+</p>
+
 ## English
 
 EnhancedShotgun is a LabAPI plugin for SCP: Secret Laboratory. It disables normal shotgun acquisition and adds one special enhanced shotgun in LCZ GR-18.
